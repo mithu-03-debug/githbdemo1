@@ -1,0 +1,9 @@
+def sum_of_digits(n):
+    """Calculate the sum of digits in a number"""
+    n = abs(n)  # Handle negative numbers
+    return sum(int(digit) for digit in str(n))
+
+# Example usage
+number = int(input("Enter a number: "))
+result = sum_of_digits(number)
+print(f"Sum of digits: {result}")
